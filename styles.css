@@ -1,0 +1,120 @@
+:root {
+  --title: #fffcf9;
+  --subtitle: #b3b3b3;
+  --bg-button: #e9e6e3;
+  --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background);
+  z-index: -1;
+}
+
+header {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+header h1 {
+  color: var(--title);
+  font-size: 40px;
+}
+
+.contentMovieResult {
+  padding: 0 1rem 0 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentMovieResult img{
+    width: 171px;
+    height: 243px;
+  }
+
+.contentMovieResult h1 {
+  color: var(--title);
+}
+
+.contentMovieResult p{
+  color: var(--subtitle);
+  font-size: 19px;
+}
+
+.btnFind {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.btnFind button {
+  width: 200px;
+  height: 55px;
+  cursor: pointer;
+  border: none;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 15px;
+  font-weight: 800;  
+  background-color: var(--bg-button);
+  border-radius: 5px;
+}
+
+.btnFind button:hover {
+  opacity: 0.8;
+}
+
+.btnFind p {
+  color: var(--subtitle);
+  margin-top: 2rem;
+  font-size: 15px;
+}
+
+
+/* Estilos para dispositivos grandes (desktops e laptops) */
+@media (min-width: 993px) {
+  .contentMovieResult {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .contentMovieResult img{
+    width: 171px;
+    height: 243px;
+  }
+
+  .contentMovieResult .movie-info {
+    width: 35rem;
+    text-align: left;
+  }
+}
