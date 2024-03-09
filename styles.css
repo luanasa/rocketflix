@@ -100,6 +100,13 @@ header h1 {
 
 /* Estilos para dispositivos grandes (desktops e laptops) */
 @media (min-width: 993px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .contentMovieResult {
     display: none;
     flex-direction: row;
