@@ -1,3 +1,4 @@
 # Rocketflix
 
-![image](https://github.com/luanasa/rocketflix/assets/38231334/cb3c5bb2-bc76-40f3-9c69-401b812b7549)
+![image](https://github.com/luanasa/rocketflix/assets/38231334/90bfaa2b-572a-4cf7-a46a-954dd0d0b165)
+
